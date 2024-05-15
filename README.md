@@ -12,11 +12,35 @@ Created a logging middleware for my Express application. This middleware should 
 + Additionally, log the time taken for processing the request.  
 
 
-
 ## How to install and run in yours local machine
 ```bash
 npm install
 npm run start
+```
+
+## API End Point #1
+```javascript
+GET /add-new-product
+```
+When a GET request is made to route ```/add-new-product```, the server will respond with a dummy message ```product added!```
+
+### API Response Example
+```javascript
+product added !
+```
+
+## API End Point #2
+```javascript
+POST /products
+```
+When a GET request is made to route ```/products```, the server will respond with a json data with sample products.
+
+### API Response Example
+```javascript
+{
+    "Gold": "MMTC Pamp 999.9 pure fine Gold 10gm",
+    "Silver": "MMTC Pamp 999.9 pure fine Silver 250gm"
+}
 ```
 
 ## Tech. Stack Used:
